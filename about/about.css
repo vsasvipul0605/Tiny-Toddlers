@@ -1,0 +1,79 @@
+body {
+  background: url('back.jpg');
+}
+
+.containers {
+  width: 550px;
+  height: 100%;
+  margin-left: 10px;
+}
+
+.pic {
+  box-shadow: 6px 6px 7px #888888;
+  width: 300px;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+  margin-top: 100px;
+  margin-left: 135px;
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.pic:before {
+  content: '';
+  margin-top: -63px;
+  margin-left: -80px;
+  position: absolute;
+  width: 450px;
+  height: 450px;
+  //background: url('http://ultraimg.com/images/a0ed6d.jpg') center center;
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.pic:hover {
+  box-shadow: 3px 3px 7px #888888;
+  cursor: pointer;
+}
+
+.content {
+  height: 100%;
+  width: 500px;
+}
+
+.mine {
+  float: left;
+  margin: auto;
+}
+
+p {
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+h2 {
+  font-family: 'Shadows Into Light', cursive;
+}
+
+h1 {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 60px;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+sup {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-style: italic;
+  font-size: smaller;
+}
+
+span {
+  color: red;
+}
+
+img {
+  position: relative;
+  height: 100%;
+}

@@ -1,0 +1,18 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #98defa;
+}
+#rotate {
+  animation: rotation 2s infinite linear;
+  margin-top: 20%; 
+  margin-left: 45%;
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

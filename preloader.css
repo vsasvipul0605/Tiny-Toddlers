@@ -1,0 +1,111 @@
+/*loader css*/
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #d4b6b6;
+}
+#rotate {
+  animation: rotation 2s infinite linear;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin:250% 500%;
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/*preloader*/
+.loader-wrapper {
+	width: 100%
+	height:100%;
+	position: absolute;
+	top:0;
+	left:0;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	/*z-index: 10000;*/
+}
+/*css*/
+body{
+	background-image: url(back_1.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: inline-flex;
+
+}
+
+ul{
+	padding: 0;
+}
+li{
+	max-height: auto;
+	max-width: 2.5%;
+	line-height: 400%;
+	margin: 0;	
+	padding-top: 75px;
+	padding-left: 25px;
+	
+}
+a {
+	text-decoration: none;
+	color: black;
+}
+a:hover {
+	color: white;	
+}
+#navbar {
+	max-height: 100vh;
+}
+
+.swap:hover span {
+    display:none;
+}
+#home:hover:before {
+    color:white;
+    font-size:15px;
+    float: left;
+    content:"HOME";
+    transform: translateX(-35%);
+}
+#rhymes:hover:before {
+    color:white;
+    font-size:14px;
+    float: left;
+    content:"RHYMES";
+    transform: translateX(-35%);
+}
+#games:hover:before {
+    color:white;
+    font-size:15px;
+    float: left;
+    content:"GAMES";
+    transform: translateX(-35%);
+}
+#lullaby:hover:before {
+    color:white;
+    font-size:13px;
+    float: left;
+    content:"LULLABY";
+    transform: translateX(-35%);
+}
+#about:hover:before {
+    color:white;
+    font-size:15px;
+    float: left;
+    content:"ABOUT";
+    transform: translateX(-35%);
+}
+div {
+	float: 
+}
+
+
+
+

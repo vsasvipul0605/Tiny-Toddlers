@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Courgette&display=swap');
+
+body {
+  padding: 40px 0;
+  background-image: url(back.jpg);
+
+}
+
+a {
+    text-decoration: none;
+}
+
+#head {
+    text-align: center;
+    font-size: 2rem;
+    //padding: inherit;
+    margin-bottom: 40px;
+    font-family: 'Monoton', cursive;
+
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-gap: 20px;
+  align-items: stretch;
+}
+
+.grid > article {
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+}
+
+.grid > article img {
+  max-width: 100%;
+}
+
+.grid .text {
+  padding: 20px;
+  text-align: center;
+}
+
+.grid .text h3 {
+  font-size: 1.4rem;
+  font-family: 'Fredoka One', cursive;
+}
+
+.grid .text p {
+  font-size: 0.9rem;
+}
+
+.grid .text p a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #555;
+  font-family: 'Courgette', cursive;
+}
+
+.grid img:hover{ 
+  animation: pulse 1s infinite;
+  animation-timing-function: linear;   
+}
+
+#head span:hover{ 
+  animation: shake 75ms infinite;
+  animation-timing-function: linear; 
+  background-color: azure;
+}
+
+button {
+	border-radius: 20px;
+	border: 1px solid #ff4b2b;
+	background: white;
+	color: #000;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 12px 45px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	transition: transform 80ms ease-in;
+}
+
+button:active {
+	transform: scale(0.95);
+}
+button:focus {
+	outline: none;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1);}
+  100% { transform: scale(1); }
+  
+}
+
+@keyframes shake {
+  0% { transform: rotate(5deg); }
+  50% { transform: rotate(-5deg); }
+  100% { transform: rotate(5deg); }
+}
